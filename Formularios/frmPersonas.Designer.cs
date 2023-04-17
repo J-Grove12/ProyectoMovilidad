@@ -30,8 +30,6 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dtpInscripcion = new System.Windows.Forms.DateTimePicker();
-            this.txtPaz = new System.Windows.Forms.TextBox();
-            this.lblPaz = new System.Windows.Forms.Label();
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.txtDocumento = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -54,9 +52,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.dtpInscripcion);
-            this.groupBox1.Controls.Add(this.txtPaz);
-            this.groupBox1.Controls.Add(this.lblPaz);
             this.groupBox1.Controls.Add(this.txtEstado);
             this.groupBox1.Controls.Add(this.txtDocumento);
             this.groupBox1.Controls.Add(this.txtNombre);
@@ -66,7 +63,7 @@
             this.groupBox1.Controls.Add(this.lblNombre);
             this.groupBox1.Location = new System.Drawing.Point(22, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(333, 220);
+            this.groupBox1.Size = new System.Drawing.Size(371, 237);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Persona";
@@ -77,22 +74,6 @@
             this.dtpInscripcion.Name = "dtpInscripcion";
             this.dtpInscripcion.Size = new System.Drawing.Size(200, 20);
             this.dtpInscripcion.TabIndex = 10;
-            // 
-            // txtPaz
-            // 
-            this.txtPaz.Location = new System.Drawing.Point(127, 171);
-            this.txtPaz.Name = "txtPaz";
-            this.txtPaz.Size = new System.Drawing.Size(100, 20);
-            this.txtPaz.TabIndex = 9;
-            // 
-            // lblPaz
-            // 
-            this.lblPaz.AutoSize = true;
-            this.lblPaz.Location = new System.Drawing.Point(60, 171);
-            this.lblPaz.Name = "lblPaz";
-            this.lblPaz.Size = new System.Drawing.Size(64, 13);
-            this.lblPaz.TabIndex = 8;
-            this.lblPaz.Text = "Paz y salvo:";
             // 
             // txtEstado
             // 
@@ -153,7 +134,7 @@
             // 
             // btnPrimero
             // 
-            this.btnPrimero.Location = new System.Drawing.Point(22, 238);
+            this.btnPrimero.Location = new System.Drawing.Point(23, 287);
             this.btnPrimero.Name = "btnPrimero";
             this.btnPrimero.Size = new System.Drawing.Size(49, 23);
             this.btnPrimero.TabIndex = 1;
@@ -163,7 +144,7 @@
             // 
             // btnAnterior
             // 
-            this.btnAnterior.Location = new System.Drawing.Point(77, 238);
+            this.btnAnterior.Location = new System.Drawing.Point(78, 287);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(50, 23);
             this.btnAnterior.TabIndex = 2;
@@ -173,7 +154,7 @@
             // 
             // btnSiguiente
             // 
-            this.btnSiguiente.Location = new System.Drawing.Point(133, 238);
+            this.btnSiguiente.Location = new System.Drawing.Point(134, 287);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(46, 23);
             this.btnSiguiente.TabIndex = 3;
@@ -183,7 +164,7 @@
             // 
             // btnUltimo
             // 
-            this.btnUltimo.Location = new System.Drawing.Point(185, 238);
+            this.btnUltimo.Location = new System.Drawing.Point(186, 287);
             this.btnUltimo.Name = "btnUltimo";
             this.btnUltimo.Size = new System.Drawing.Size(49, 23);
             this.btnUltimo.TabIndex = 4;
@@ -193,7 +174,7 @@
             // 
             // btnRetiro
             // 
-            this.btnRetiro.Location = new System.Drawing.Point(392, 122);
+            this.btnRetiro.Location = new System.Drawing.Point(668, 132);
             this.btnRetiro.Name = "btnRetiro";
             this.btnRetiro.Size = new System.Drawing.Size(75, 23);
             this.btnRetiro.TabIndex = 27;
@@ -202,7 +183,7 @@
             // 
             // btnModificacion
             // 
-            this.btnModificacion.Location = new System.Drawing.Point(392, 93);
+            this.btnModificacion.Location = new System.Drawing.Point(668, 103);
             this.btnModificacion.Name = "btnModificacion";
             this.btnModificacion.Size = new System.Drawing.Size(75, 23);
             this.btnModificacion.TabIndex = 26;
@@ -211,7 +192,7 @@
             // 
             // btnIngreso
             // 
-            this.btnIngreso.Location = new System.Drawing.Point(392, 61);
+            this.btnIngreso.Location = new System.Drawing.Point(668, 71);
             this.btnIngreso.Name = "btnIngreso";
             this.btnIngreso.Size = new System.Drawing.Size(75, 23);
             this.btnIngreso.TabIndex = 25;
@@ -220,7 +201,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(392, 151);
+            this.btnGuardar.Location = new System.Drawing.Point(668, 161);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 24;
@@ -230,7 +211,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(392, 186);
+            this.btnSalir.Location = new System.Drawing.Point(668, 196);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 23;
@@ -239,7 +220,7 @@
             // 
             // btnConsulta
             // 
-            this.btnConsulta.Location = new System.Drawing.Point(392, 24);
+            this.btnConsulta.Location = new System.Drawing.Point(668, 34);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.Size = new System.Drawing.Size(75, 23);
             this.btnConsulta.TabIndex = 22;
@@ -275,8 +256,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtPaz;
-        private System.Windows.Forms.Label lblPaz;
         private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.TextBox txtDocumento;
         private System.Windows.Forms.TextBox txtNombre;
