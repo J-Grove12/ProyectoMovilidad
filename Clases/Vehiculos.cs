@@ -8,5 +8,6 @@ namespace Proyecto_Movilidad.Clases
 {
     internal class Vehiculos
     {
+        //*****
     }
 }
