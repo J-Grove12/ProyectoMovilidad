@@ -16,6 +16,8 @@ namespace Proyecto_Movilidad.Clases
         //definir una variable para cargar la base de datos
         private SqlConnection Conexion = new SqlConnection(cadenaconecion);
 
+        //C:\Users\jonat\Documents\ProyectoPOO\Proyecto_Movilidad\dbMovilidad.mdf
+
         //metodo para abrir la base de datos
         public SqlConnection AbrirConexion()
         {

@@ -37,7 +37,7 @@ namespace Proyecto_Movilidad.Formularios
             txtNombre.Text = dt.Rows[i][1].ToString();
             txtEstado.Text = dt.Rows[i][2].ToString();
             dtpInscripcion.Text = dt.Rows[i][3].ToString(); 
-            txtPaz.Text= dt.Rows[i][4].ToString();
+           
             //cantidad de registro en la tabla
             contador = dt.Rows.Count;
         }
@@ -47,7 +47,7 @@ namespace Proyecto_Movilidad.Formularios
             txtDocumento.Enabled= true;
             txtEstado.Enabled= true;
             txtNombre.Enabled= true;
-            txtPaz.Enabled= true;
+           
             dtpInscripcion.Enabled = true;
         }
 
@@ -92,12 +92,27 @@ namespace Proyecto_Movilidad.Formularios
             llenar(dt, i);
         }
 
+        private void txtDocumento_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEstado_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         void deshabilita()
         {
             txtDocumento.Enabled = false;
             txtEstado.Enabled =false;
             txtNombre.Enabled = false;
-            txtPaz.Enabled = false;
+          
             dtpInscripcion.Enabled = false;
         }
         void limpiar()
@@ -105,7 +120,7 @@ namespace Proyecto_Movilidad.Formularios
             txtDocumento.Clear();
             txtEstado.Clear();
             txtNombre.Clear();
-            txtPaz.Clear();
+          
         }
     }
 }
