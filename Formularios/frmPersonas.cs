@@ -25,7 +25,7 @@ namespace Proyecto_Movilidad.Formularios
             InitializeComponent();
             cn=new cConexion(); ;
             i = 0; boton = 0;
-            cmd = new SqlCommand("select * from tblCliente",cn.AbrirConexion());
+            cmd = new SqlCommand("select * from tblPersona",cn.AbrirConexion());
             da= new SqlDataAdapter(cmd);
             dt = new DataTable();
             da.Fill(dt);

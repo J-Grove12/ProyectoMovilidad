@@ -12,7 +12,7 @@ namespace Proyecto_Movilidad.Clases
     internal class cConexion
     {
         //se define la ruta de la base de datos
-        static private string cadenaconecion = @"Data Source==(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\jonat\Documents\ProyectoPOO\Proyecto_Movilidad\dbMovilidad.mdf';Integrated securiry;connect Timeout=30";
+        static private string cadenaconecion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\jonat\Documents\ProyectoPOO\Proyecto_Movilidad\dbMovilidad.mdf';Integrated Security=True;connect Timeout=30";
         //definir una variable para cargar la base de datos
         private SqlConnection Conexion = new SqlConnection(cadenaconecion);
 

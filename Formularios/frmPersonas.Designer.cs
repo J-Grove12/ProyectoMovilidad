@@ -81,7 +81,6 @@
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(376, 20);
             this.txtEstado.TabIndex = 6;
-            this.txtEstado.TextChanged += new System.EventHandler(this.txtEstado_TextChanged);
             // 
             // txtDocumento
             // 
@@ -89,7 +88,6 @@
             this.txtDocumento.Name = "txtDocumento";
             this.txtDocumento.Size = new System.Drawing.Size(376, 20);
             this.txtDocumento.TabIndex = 5;
-            this.txtDocumento.TextChanged += new System.EventHandler(this.txtDocumento_TextChanged);
             // 
             // txtNombre
             // 
@@ -97,7 +95,6 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(376, 20);
             this.txtNombre.TabIndex = 4;
-            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // lblFecha
             // 
@@ -242,6 +239,7 @@
             this.btnSalir.TabIndex = 23;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnConsulta
             // 
