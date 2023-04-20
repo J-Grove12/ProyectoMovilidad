@@ -30,7 +30,6 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dtpInscripcion = new System.Windows.Forms.DateTimePicker();
-            this.txtEstado = new System.Windows.Forms.TextBox();
             this.txtDocumento = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblFecha = new System.Windows.Forms.Label();
@@ -47,14 +46,15 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnConsulta = new System.Windows.Forms.Button();
+            this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(236)))), ((int)(((byte)(209)))));
+            this.groupBox1.Controls.Add(this.cmbEstado);
             this.groupBox1.Controls.Add(this.dtpInscripcion);
-            this.groupBox1.Controls.Add(this.txtEstado);
             this.groupBox1.Controls.Add(this.txtDocumento);
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.lblFecha);
@@ -70,17 +70,11 @@
             // 
             // dtpInscripcion
             // 
-            this.dtpInscripcion.Location = new System.Drawing.Point(217, 136);
+            this.dtpInscripcion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpInscripcion.Location = new System.Drawing.Point(275, 144);
             this.dtpInscripcion.Name = "dtpInscripcion";
-            this.dtpInscripcion.Size = new System.Drawing.Size(376, 20);
+            this.dtpInscripcion.Size = new System.Drawing.Size(288, 20);
             this.dtpInscripcion.TabIndex = 10;
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.Location = new System.Drawing.Point(187, 107);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(376, 20);
-            this.txtEstado.TabIndex = 6;
             // 
             // txtDocumento
             // 
@@ -88,6 +82,7 @@
             this.txtDocumento.Name = "txtDocumento";
             this.txtDocumento.Size = new System.Drawing.Size(376, 20);
             this.txtDocumento.TabIndex = 5;
+            this.txtDocumento.Leave += new System.EventHandler(this.txtDocumento_Leave);
             // 
             // txtNombre
             // 
@@ -100,7 +95,7 @@
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Lucida Bright", 15.75F, System.Drawing.FontStyle.Bold);
-            this.lblFecha.Location = new System.Drawing.Point(29, 205);
+            this.lblFecha.Location = new System.Drawing.Point(6, 142);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(240, 24);
             this.lblFecha.TabIndex = 3;
@@ -194,6 +189,7 @@
             this.btnRetiro.TabIndex = 27;
             this.btnRetiro.Text = "Retiro";
             this.btnRetiro.UseVisualStyleBackColor = false;
+            this.btnRetiro.Click += new System.EventHandler(this.btnRetiro_Click);
             // 
             // btnModificacion
             // 
@@ -205,6 +201,7 @@
             this.btnModificacion.TabIndex = 26;
             this.btnModificacion.Text = "Modificacion";
             this.btnModificacion.UseVisualStyleBackColor = false;
+            this.btnModificacion.Click += new System.EventHandler(this.btnModificacion_Click);
             // 
             // btnIngreso
             // 
@@ -216,6 +213,7 @@
             this.btnIngreso.TabIndex = 25;
             this.btnIngreso.Text = "ingreso";
             this.btnIngreso.UseVisualStyleBackColor = false;
+            this.btnIngreso.Click += new System.EventHandler(this.btnIngreso_Click);
             // 
             // btnGuardar
             // 
@@ -228,6 +226,7 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Visible = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnSalir
             // 
@@ -251,6 +250,18 @@
             this.btnConsulta.TabIndex = 22;
             this.btnConsulta.Text = "Consulta";
             this.btnConsulta.UseVisualStyleBackColor = false;
+            this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
+            // 
+            // cmbEstado
+            // 
+            this.cmbEstado.FormattingEnabled = true;
+            this.cmbEstado.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo"});
+            this.cmbEstado.Location = new System.Drawing.Point(187, 103);
+            this.cmbEstado.Name = "cmbEstado";
+            this.cmbEstado.Size = new System.Drawing.Size(376, 21);
+            this.cmbEstado.TabIndex = 11;
             // 
             // frmPersonas
             // 
@@ -281,7 +292,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.TextBox txtDocumento;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblFecha;
@@ -299,5 +309,6 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnConsulta;
         private System.Windows.Forms.DateTimePicker dtpInscripcion;
+        private System.Windows.Forms.ComboBox cmbEstado;
     }
 }
