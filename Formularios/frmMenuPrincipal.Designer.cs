@@ -174,9 +174,9 @@
             // 
             // pnlContenedor
             // 
-            this.pnlContenedor.Location = new System.Drawing.Point(241, 16);
+            this.pnlContenedor.Location = new System.Drawing.Point(223, 12);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(769, 476);
+            this.pnlContenedor.Size = new System.Drawing.Size(816, 470);
             this.pnlContenedor.TabIndex = 6;
             // 
             // frmMenuPrincipal
@@ -184,7 +184,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(150)))));
-            this.ClientSize = new System.Drawing.Size(1022, 497);
+            this.ClientSize = new System.Drawing.Size(1047, 497);
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.panel1);
             this.Name = "frmMenuPrincipal";

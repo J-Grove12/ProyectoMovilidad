@@ -213,8 +213,9 @@ namespace Proyecto_Movilidad.Formularios
                 act = 0;
             }
             if (boton == 2)
+
             {
-                SqlCommand cmd = new SqlCommand("insert into tblPersona values('" + txtDocumento.Text + "', '" + txtNombre.Text + "','" + act + "','" + dtpInscripcion.Text + "')", cn.AbrirConexion());
+                SqlCommand cmd = new SqlCommand("insert into tblPersona values('" + Convert.ToInt32(txtDocumento.Text) + "', '" + txtNombre.Text + "','" + act + "','" + dtpInscripcion.Text + "')", cn.AbrirConexion());
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Persona Guardada");
             }

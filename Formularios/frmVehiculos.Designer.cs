@@ -45,12 +45,9 @@
             this.txtColor = new System.Windows.Forms.TextBox();
             this.txtCilindraje = new System.Windows.Forms.TextBox();
             this.txtModelo = new System.Windows.Forms.TextBox();
-            this.txtFecha = new System.Windows.Forms.TextBox();
             this.txtAutoridad = new System.Windows.Forms.TextBox();
-            this.txtClase = new System.Windows.Forms.TextBox();
-            this.txtEstado = new System.Windows.Forms.TextBox();
             this.txtPlaca = new System.Windows.Forms.TextBox();
-            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.txtNumeroMatricula = new System.Windows.Forms.TextBox();
             this.btnRetiro = new System.Windows.Forms.Button();
             this.btnModificacion = new System.Windows.Forms.Button();
             this.btnIngreso = new System.Windows.Forms.Button();
@@ -61,11 +58,17 @@
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnAnterior = new System.Windows.Forms.Button();
             this.btnPrimero = new System.Windows.Forms.Button();
+            this.cmbEstado = new System.Windows.Forms.ComboBox();
+            this.cmbClaseVehiculo = new System.Windows.Forms.ComboBox();
+            this.dtpMatricula = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dtpMatricula);
+            this.groupBox1.Controls.Add(this.cmbClaseVehiculo);
+            this.groupBox1.Controls.Add(this.cmbEstado);
             this.groupBox1.Controls.Add(this.txtDueno);
             this.groupBox1.Controls.Add(this.txtMarca);
             this.groupBox1.Controls.Add(this.lblDueno);
@@ -82,12 +85,9 @@
             this.groupBox1.Controls.Add(this.txtColor);
             this.groupBox1.Controls.Add(this.txtCilindraje);
             this.groupBox1.Controls.Add(this.txtModelo);
-            this.groupBox1.Controls.Add(this.txtFecha);
             this.groupBox1.Controls.Add(this.txtAutoridad);
-            this.groupBox1.Controls.Add(this.txtClase);
-            this.groupBox1.Controls.Add(this.txtEstado);
             this.groupBox1.Controls.Add(this.txtPlaca);
-            this.groupBox1.Controls.Add(this.txtNumero);
+            this.groupBox1.Controls.Add(this.txtNumeroMatricula);
             this.groupBox1.Location = new System.Drawing.Point(63, 33);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(387, 377);
@@ -97,6 +97,7 @@
             // 
             // txtDueno
             // 
+            this.txtDueno.Enabled = false;
             this.txtDueno.Location = new System.Drawing.Point(119, 336);
             this.txtDueno.Name = "txtDueno";
             this.txtDueno.Size = new System.Drawing.Size(100, 20);
@@ -104,6 +105,7 @@
             // 
             // txtMarca
             // 
+            this.txtMarca.Enabled = false;
             this.txtMarca.Location = new System.Drawing.Point(119, 310);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(100, 20);
@@ -210,6 +212,7 @@
             // 
             // txtColor
             // 
+            this.txtColor.Enabled = false;
             this.txtColor.Location = new System.Drawing.Point(119, 274);
             this.txtColor.Name = "txtColor";
             this.txtColor.Size = new System.Drawing.Size(100, 20);
@@ -217,6 +220,7 @@
             // 
             // txtCilindraje
             // 
+            this.txtCilindraje.Enabled = false;
             this.txtCilindraje.Location = new System.Drawing.Point(119, 248);
             this.txtCilindraje.Name = "txtCilindraje";
             this.txtCilindraje.Size = new System.Drawing.Size(100, 20);
@@ -224,52 +228,36 @@
             // 
             // txtModelo
             // 
+            this.txtModelo.Enabled = false;
             this.txtModelo.Location = new System.Drawing.Point(119, 222);
             this.txtModelo.Name = "txtModelo";
             this.txtModelo.Size = new System.Drawing.Size(100, 20);
             this.txtModelo.TabIndex = 6;
             // 
-            // txtFecha
-            // 
-            this.txtFecha.Location = new System.Drawing.Point(119, 197);
-            this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(100, 20);
-            this.txtFecha.TabIndex = 5;
-            // 
             // txtAutoridad
             // 
+            this.txtAutoridad.Enabled = false;
             this.txtAutoridad.Location = new System.Drawing.Point(119, 170);
             this.txtAutoridad.Name = "txtAutoridad";
             this.txtAutoridad.Size = new System.Drawing.Size(100, 20);
             this.txtAutoridad.TabIndex = 4;
             // 
-            // txtClase
-            // 
-            this.txtClase.Location = new System.Drawing.Point(119, 142);
-            this.txtClase.Name = "txtClase";
-            this.txtClase.Size = new System.Drawing.Size(100, 20);
-            this.txtClase.TabIndex = 3;
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.Location = new System.Drawing.Point(119, 116);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(100, 20);
-            this.txtEstado.TabIndex = 2;
-            // 
             // txtPlaca
             // 
+            this.txtPlaca.Enabled = false;
             this.txtPlaca.Location = new System.Drawing.Point(119, 90);
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(100, 20);
             this.txtPlaca.TabIndex = 1;
+            this.txtPlaca.Leave += new System.EventHandler(this.txtPlaca_Leave);
             // 
-            // txtNumero
+            // txtNumeroMatricula
             // 
-            this.txtNumero.Location = new System.Drawing.Point(119, 53);
-            this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(100, 20);
-            this.txtNumero.TabIndex = 0;
+            this.txtNumeroMatricula.Enabled = false;
+            this.txtNumeroMatricula.Location = new System.Drawing.Point(119, 53);
+            this.txtNumeroMatricula.Name = "txtNumeroMatricula";
+            this.txtNumeroMatricula.Size = new System.Drawing.Size(100, 20);
+            this.txtNumeroMatricula.TabIndex = 0;
             // 
             // btnRetiro
             // 
@@ -279,6 +267,7 @@
             this.btnRetiro.TabIndex = 27;
             this.btnRetiro.Text = "Retiro";
             this.btnRetiro.UseVisualStyleBackColor = true;
+            this.btnRetiro.Click += new System.EventHandler(this.btnRetiro_Click);
             // 
             // btnModificacion
             // 
@@ -288,6 +277,7 @@
             this.btnModificacion.TabIndex = 26;
             this.btnModificacion.Text = "Modificacion";
             this.btnModificacion.UseVisualStyleBackColor = true;
+            this.btnModificacion.Click += new System.EventHandler(this.btnModificacion_Click);
             // 
             // btnIngreso
             // 
@@ -297,6 +287,7 @@
             this.btnIngreso.TabIndex = 25;
             this.btnIngreso.Text = "ingreso";
             this.btnIngreso.UseVisualStyleBackColor = true;
+            this.btnIngreso.Click += new System.EventHandler(this.btnIngreso_Click);
             // 
             // btnGuardar
             // 
@@ -307,6 +298,7 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Visible = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnSalir
             // 
@@ -316,6 +308,7 @@
             this.btnSalir.TabIndex = 23;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnConsulta
             // 
@@ -325,6 +318,7 @@
             this.btnConsulta.TabIndex = 22;
             this.btnConsulta.Text = "Consulta";
             this.btnConsulta.UseVisualStyleBackColor = true;
+            this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
             // btnUltimo
             // 
@@ -334,6 +328,7 @@
             this.btnUltimo.TabIndex = 31;
             this.btnUltimo.Text = ">|";
             this.btnUltimo.UseVisualStyleBackColor = true;
+            this.btnUltimo.Click += new System.EventHandler(this.btnUltimo_Click);
             // 
             // btnSiguiente
             // 
@@ -343,6 +338,7 @@
             this.btnSiguiente.TabIndex = 30;
             this.btnSiguiente.Text = ">>";
             this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // btnAnterior
             // 
@@ -352,6 +348,7 @@
             this.btnAnterior.TabIndex = 29;
             this.btnAnterior.Text = "<<";
             this.btnAnterior.UseVisualStyleBackColor = true;
+            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
             // btnPrimero
             // 
@@ -361,6 +358,42 @@
             this.btnPrimero.TabIndex = 28;
             this.btnPrimero.Text = "|<";
             this.btnPrimero.UseVisualStyleBackColor = true;
+            this.btnPrimero.Click += new System.EventHandler(this.btnPrimero_Click);
+            // 
+            // cmbEstado
+            // 
+            this.cmbEstado.Enabled = false;
+            this.cmbEstado.FormattingEnabled = true;
+            this.cmbEstado.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo"});
+            this.cmbEstado.Location = new System.Drawing.Point(119, 116);
+            this.cmbEstado.Name = "cmbEstado";
+            this.cmbEstado.Size = new System.Drawing.Size(121, 21);
+            this.cmbEstado.TabIndex = 22;
+            // 
+            // cmbClaseVehiculo
+            // 
+            this.cmbClaseVehiculo.Enabled = false;
+            this.cmbClaseVehiculo.FormattingEnabled = true;
+            this.cmbClaseVehiculo.Items.AddRange(new object[] {
+            "Moto ",
+            "Carro",
+            "Bus",
+            "Tractomula"});
+            this.cmbClaseVehiculo.Location = new System.Drawing.Point(119, 143);
+            this.cmbClaseVehiculo.Name = "cmbClaseVehiculo";
+            this.cmbClaseVehiculo.Size = new System.Drawing.Size(111, 21);
+            this.cmbClaseVehiculo.TabIndex = 23;
+            // 
+            // dtpMatricula
+            // 
+            this.dtpMatricula.Enabled = false;
+            this.dtpMatricula.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpMatricula.Location = new System.Drawing.Point(119, 197);
+            this.dtpMatricula.Name = "dtpMatricula";
+            this.dtpMatricula.Size = new System.Drawing.Size(141, 20);
+            this.dtpMatricula.TabIndex = 24;
             // 
             // frmVehiculos
             // 
@@ -380,6 +413,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmVehiculos";
             this.Text = "frmVehiculos";
+            this.Load += new System.EventHandler(this.frmVehiculos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -405,12 +439,9 @@
         private System.Windows.Forms.TextBox txtColor;
         private System.Windows.Forms.TextBox txtCilindraje;
         private System.Windows.Forms.TextBox txtModelo;
-        private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.TextBox txtAutoridad;
-        private System.Windows.Forms.TextBox txtClase;
-        private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.TextBox txtPlaca;
-        private System.Windows.Forms.TextBox txtNumero;
+        private System.Windows.Forms.TextBox txtNumeroMatricula;
         private System.Windows.Forms.Button btnRetiro;
         private System.Windows.Forms.Button btnModificacion;
         private System.Windows.Forms.Button btnIngreso;
@@ -421,5 +452,8 @@
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Button btnAnterior;
         private System.Windows.Forms.Button btnPrimero;
+        private System.Windows.Forms.DateTimePicker dtpMatricula;
+        private System.Windows.Forms.ComboBox cmbClaseVehiculo;
+        private System.Windows.Forms.ComboBox cmbEstado;
     }
 }
