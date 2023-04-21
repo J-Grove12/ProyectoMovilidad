@@ -42,6 +42,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(125)))), ((int)(((byte)(0)))));
             this.groupBox1.Controls.Add(this.btnSalir);
             this.groupBox1.Controls.Add(this.btnAceptar);
             this.groupBox1.Controls.Add(this.lblContrasena);
@@ -50,7 +51,7 @@
             this.groupBox1.Controls.Add(this.txtUsuario);
             this.groupBox1.Font = new System.Drawing.Font("Lucida Bright", 15.75F, System.Drawing.FontStyle.Bold);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBox1.Location = new System.Drawing.Point(12, 0);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(563, 268);
             this.groupBox1.TabIndex = 0;
@@ -125,7 +126,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(587, 280);
+            this.ClientSize = new System.Drawing.Size(587, 299);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmIngreso";
             this.Text = "Login";
