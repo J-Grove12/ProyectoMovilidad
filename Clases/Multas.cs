@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Movilidad.Clases
 {
-    internal class Multas
+    public class Multas
     {
+        public string IdMulta { get; set; }
+        public string Documento_Persona { get; set; }
+        public string Valor { get; set; }
+        public string Fecha { get; set; }
+        public string Descripcion { get; set; }
+
     }
 }

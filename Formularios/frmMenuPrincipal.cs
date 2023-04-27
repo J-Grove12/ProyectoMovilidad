@@ -83,5 +83,17 @@ namespace Proyecto_Movilidad.Formularios
         {
             this.Close();
         }
+
+        private void btnMultas_Click(object sender, EventArgs e)
+        {
+            abrirFormulariosHijos(new frmMulta());
+            ocultarSubmenu();
+        }
+
+        private void btnLicencias_Click(object sender, EventArgs e)
+        {
+            abrirFormulariosHijos(new frmGestorMultas());
+            ocultarSubmenu();
+        }
     }
 }

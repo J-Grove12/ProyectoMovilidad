@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Vehiculo = new System.Windows.Forms.GroupBox();
             this.txtDueno = new System.Windows.Forms.TextBox();
             this.txtMarca = new System.Windows.Forms.TextBox();
             this.lblDueno = new System.Windows.Forms.Label();
@@ -61,39 +61,40 @@
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.cmbClaseVehiculo = new System.Windows.Forms.ComboBox();
             this.dtpMatricula = new System.Windows.Forms.DateTimePicker();
-            this.groupBox1.SuspendLayout();
+            this.Vehiculo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // Vehiculo
             // 
-            this.groupBox1.Controls.Add(this.dtpMatricula);
-            this.groupBox1.Controls.Add(this.cmbClaseVehiculo);
-            this.groupBox1.Controls.Add(this.cmbEstado);
-            this.groupBox1.Controls.Add(this.txtDueno);
-            this.groupBox1.Controls.Add(this.txtMarca);
-            this.groupBox1.Controls.Add(this.lblDueno);
-            this.groupBox1.Controls.Add(this.lblMarca);
-            this.groupBox1.Controls.Add(this.lblColor);
-            this.groupBox1.Controls.Add(this.lblCilindraje);
-            this.groupBox1.Controls.Add(this.lblModelo);
-            this.groupBox1.Controls.Add(this.lblFecha);
-            this.groupBox1.Controls.Add(this.lblAutoridad);
-            this.groupBox1.Controls.Add(this.lblClase);
-            this.groupBox1.Controls.Add(this.lblEstado);
-            this.groupBox1.Controls.Add(this.lblPlaca);
-            this.groupBox1.Controls.Add(this.lblNumero);
-            this.groupBox1.Controls.Add(this.txtColor);
-            this.groupBox1.Controls.Add(this.txtCilindraje);
-            this.groupBox1.Controls.Add(this.txtModelo);
-            this.groupBox1.Controls.Add(this.txtAutoridad);
-            this.groupBox1.Controls.Add(this.txtPlaca);
-            this.groupBox1.Controls.Add(this.txtNumeroMatricula);
-            this.groupBox1.Location = new System.Drawing.Point(63, 33);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(387, 377);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.Vehiculo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(236)))), ((int)(((byte)(209)))));
+            this.Vehiculo.Controls.Add(this.dtpMatricula);
+            this.Vehiculo.Controls.Add(this.cmbClaseVehiculo);
+            this.Vehiculo.Controls.Add(this.cmbEstado);
+            this.Vehiculo.Controls.Add(this.txtDueno);
+            this.Vehiculo.Controls.Add(this.txtMarca);
+            this.Vehiculo.Controls.Add(this.lblDueno);
+            this.Vehiculo.Controls.Add(this.lblMarca);
+            this.Vehiculo.Controls.Add(this.lblColor);
+            this.Vehiculo.Controls.Add(this.lblCilindraje);
+            this.Vehiculo.Controls.Add(this.lblModelo);
+            this.Vehiculo.Controls.Add(this.lblFecha);
+            this.Vehiculo.Controls.Add(this.lblAutoridad);
+            this.Vehiculo.Controls.Add(this.lblClase);
+            this.Vehiculo.Controls.Add(this.lblEstado);
+            this.Vehiculo.Controls.Add(this.lblPlaca);
+            this.Vehiculo.Controls.Add(this.lblNumero);
+            this.Vehiculo.Controls.Add(this.txtColor);
+            this.Vehiculo.Controls.Add(this.txtCilindraje);
+            this.Vehiculo.Controls.Add(this.txtModelo);
+            this.Vehiculo.Controls.Add(this.txtAutoridad);
+            this.Vehiculo.Controls.Add(this.txtPlaca);
+            this.Vehiculo.Controls.Add(this.txtNumeroMatricula);
+            this.Vehiculo.Location = new System.Drawing.Point(63, 33);
+            this.Vehiculo.Name = "Vehiculo";
+            this.Vehiculo.Size = new System.Drawing.Size(387, 377);
+            this.Vehiculo.TabIndex = 0;
+            this.Vehiculo.TabStop = false;
+            this.Vehiculo.Text = "groupBox1";
             // 
             // txtDueno
             // 
@@ -261,103 +262,113 @@
             // 
             // btnRetiro
             // 
+            this.btnRetiro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.btnRetiro.Location = new System.Drawing.Point(456, 144);
             this.btnRetiro.Name = "btnRetiro";
             this.btnRetiro.Size = new System.Drawing.Size(75, 23);
             this.btnRetiro.TabIndex = 27;
             this.btnRetiro.Text = "Retiro";
-            this.btnRetiro.UseVisualStyleBackColor = true;
+            this.btnRetiro.UseVisualStyleBackColor = false;
             this.btnRetiro.Click += new System.EventHandler(this.btnRetiro_Click);
             // 
             // btnModificacion
             // 
+            this.btnModificacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(125)))), ((int)(((byte)(0)))));
             this.btnModificacion.Location = new System.Drawing.Point(456, 113);
             this.btnModificacion.Name = "btnModificacion";
             this.btnModificacion.Size = new System.Drawing.Size(75, 23);
             this.btnModificacion.TabIndex = 26;
             this.btnModificacion.Text = "Modificacion";
-            this.btnModificacion.UseVisualStyleBackColor = true;
+            this.btnModificacion.UseVisualStyleBackColor = false;
             this.btnModificacion.Click += new System.EventHandler(this.btnModificacion_Click);
             // 
             // btnIngreso
             // 
+            this.btnIngreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.btnIngreso.Location = new System.Drawing.Point(456, 81);
             this.btnIngreso.Name = "btnIngreso";
             this.btnIngreso.Size = new System.Drawing.Size(75, 23);
             this.btnIngreso.TabIndex = 25;
             this.btnIngreso.Text = "ingreso";
-            this.btnIngreso.UseVisualStyleBackColor = true;
+            this.btnIngreso.UseVisualStyleBackColor = false;
             this.btnIngreso.Click += new System.EventHandler(this.btnIngreso_Click);
             // 
             // btnGuardar
             // 
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(125)))), ((int)(((byte)(0)))));
             this.btnGuardar.Location = new System.Drawing.Point(456, 178);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 24;
             this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Visible = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnSalir
             // 
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(236)))), ((int)(((byte)(209)))));
             this.btnSalir.Location = new System.Drawing.Point(456, 207);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 23;
             this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnConsulta
             // 
+            this.btnConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(125)))), ((int)(((byte)(0)))));
             this.btnConsulta.Location = new System.Drawing.Point(456, 47);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.Size = new System.Drawing.Size(75, 23);
             this.btnConsulta.TabIndex = 22;
             this.btnConsulta.Text = "Consulta";
-            this.btnConsulta.UseVisualStyleBackColor = true;
+            this.btnConsulta.UseVisualStyleBackColor = false;
             this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
             // btnUltimo
             // 
+            this.btnUltimo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(125)))), ((int)(((byte)(0)))));
             this.btnUltimo.Location = new System.Drawing.Point(234, 416);
             this.btnUltimo.Name = "btnUltimo";
             this.btnUltimo.Size = new System.Drawing.Size(49, 23);
             this.btnUltimo.TabIndex = 31;
             this.btnUltimo.Text = ">|";
-            this.btnUltimo.UseVisualStyleBackColor = true;
+            this.btnUltimo.UseVisualStyleBackColor = false;
             this.btnUltimo.Click += new System.EventHandler(this.btnUltimo_Click);
             // 
             // btnSiguiente
             // 
+            this.btnSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(97)))), ((int)(((byte)(109)))));
             this.btnSiguiente.Location = new System.Drawing.Point(182, 416);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(46, 23);
             this.btnSiguiente.TabIndex = 30;
             this.btnSiguiente.Text = ">>";
-            this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.UseVisualStyleBackColor = false;
             this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // btnAnterior
             // 
+            this.btnAnterior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(97)))), ((int)(((byte)(109)))));
             this.btnAnterior.Location = new System.Drawing.Point(126, 416);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(50, 23);
             this.btnAnterior.TabIndex = 29;
             this.btnAnterior.Text = "<<";
-            this.btnAnterior.UseVisualStyleBackColor = true;
+            this.btnAnterior.UseVisualStyleBackColor = false;
             this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
             // btnPrimero
             // 
+            this.btnPrimero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(125)))), ((int)(((byte)(0)))));
             this.btnPrimero.Location = new System.Drawing.Point(71, 416);
             this.btnPrimero.Name = "btnPrimero";
             this.btnPrimero.Size = new System.Drawing.Size(49, 23);
             this.btnPrimero.TabIndex = 28;
             this.btnPrimero.Text = "|<";
-            this.btnPrimero.UseVisualStyleBackColor = true;
+            this.btnPrimero.UseVisualStyleBackColor = false;
             this.btnPrimero.Click += new System.EventHandler(this.btnPrimero_Click);
             // 
             // cmbEstado
@@ -399,7 +410,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(570, 468);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(36)))));
+            this.ClientSize = new System.Drawing.Size(552, 468);
             this.Controls.Add(this.btnUltimo);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.btnAnterior);
@@ -410,19 +422,19 @@
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnConsulta);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.Vehiculo);
             this.Name = "frmVehiculos";
             this.Text = "frmVehiculos";
             this.Load += new System.EventHandler(this.frmVehiculos_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Vehiculo.ResumeLayout(false);
+            this.Vehiculo.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox Vehiculo;
         private System.Windows.Forms.TextBox txtDueno;
         private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.Label lblDueno;

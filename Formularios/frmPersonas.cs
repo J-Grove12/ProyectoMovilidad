@@ -35,6 +35,7 @@ namespace Proyecto_Movilidad.Formularios
         {
             txtDocumento.Text = dt.Rows[i][0].ToString();
             txtNombre.Text = dt.Rows[i][1].ToString();
+
             if(dt.Rows[i][2].ToString().Equals("True"))
             {
    
