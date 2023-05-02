@@ -33,8 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +50,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Acuerdos.cs" />
@@ -52,6 +59,18 @@
     <Compile Include="Clases\Multas.cs" />
     <Compile Include="Clases\Personas.cs" />
     <Compile Include="Clases\Vehiculos.cs" />
+    <Compile Include="Formularios\frmAcuerdo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAcuerdo.Designer.cs">
+      <DependentUpon>frmAcuerdo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmGestorMultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmGestorMultas.Designer.cs">
+      <DependentUpon>frmGestorMultas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmIngreso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +82,12 @@
     </Compile>
     <Compile Include="Formularios\frmMenuPrincipal.Designer.cs">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmMulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmMulta.Designer.cs">
+      <DependentUpon>frmMulta.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmPersonas.cs">
       <SubType>Form</SubType>
@@ -78,11 +103,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\frmAcuerdo.resx">
+      <DependentUpon>frmAcuerdo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmGestorMultas.resx">
+      <DependentUpon>frmGestorMultas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmIngreso.resx">
       <DependentUpon>frmIngreso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmMulta.resx">
+      <DependentUpon>frmMulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmPersonas.resx">
       <DependentUpon>frmPersonas.cs</DependentUpon>
@@ -98,7 +132,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -115,6 +151,13 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Imagenes\Trafico.jpg" />
+    <None Include="Resources\Logo.png" />
+    <None Include="Resources\pngCar.png" />
+    <None Include="Resources\pngMto.png" />
+    <None Include="Resources\pngConductor.png" />
+    <None Include="Resources\btnAceptar.png" />
+    <None Include="Resources\BtnGuardar.png" />
+    <None Include="Resources\plantilla.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
