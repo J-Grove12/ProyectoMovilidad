@@ -45,6 +45,8 @@
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSalir = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Document = new System.Drawing.Printing.PrintDocument();
+            this.PagarCuota = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCuotas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSeleccionado)).BeginInit();
             this.SuspendLayout();
@@ -79,11 +81,13 @@
             // 
             // dgvCuotas
             // 
+            this.dgvCuotas.AllowUserToAddRows = false;
             this.dgvCuotas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCuotas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NCuota,
             this.ValorCuota,
-            this.Fecha});
+            this.Fecha,
+            this.PagarCuota});
             this.dgvCuotas.Location = new System.Drawing.Point(27, 263);
             this.dgvCuotas.Name = "dgvCuotas";
             this.dgvCuotas.Size = new System.Drawing.Size(424, 150);
@@ -135,6 +139,7 @@
             this.btnPagar.TabIndex = 9;
             this.btnPagar.Text = "Pagar";
             this.btnPagar.UseVisualStyleBackColor = false;
+            this.btnPagar.Click += new System.EventHandler(this.btnPagar_Click);
             // 
             // dgvSeleccionado
             // 
@@ -179,7 +184,7 @@
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(97)))), ((int)(((byte)(109)))));
-            this.btnSalir.Location = new System.Drawing.Point(283, 419);
+            this.btnSalir.Location = new System.Drawing.Point(206, 420);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 11;
@@ -195,6 +200,11 @@
             this.groupBox1.Size = new System.Drawing.Size(513, 49);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
+            // 
+            // PagarCuota
+            // 
+            this.PagarCuota.HeaderText = "Pagar";
+            this.PagarCuota.Name = "PagarCuota";
             // 
             // frmAcuerdo
             // 
@@ -239,5 +249,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ValorCuota;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Drawing.Printing.PrintDocument Document;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn PagarCuota;
     }
 }

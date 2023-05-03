@@ -89,6 +89,12 @@
     <Compile Include="Formularios\frmMulta.Designer.cs">
       <DependentUpon>frmMulta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmPazSalvo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmPazSalvo.Designer.cs">
+      <DependentUpon>frmPazSalvo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmPersonas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmMulta.resx">
       <DependentUpon>frmMulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmPazSalvo.resx">
+      <DependentUpon>frmPazSalvo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmPersonas.resx">
       <DependentUpon>frmPersonas.cs</DependentUpon>
